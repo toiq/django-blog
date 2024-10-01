@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
+    "taggit",
     "blog.apps.BlogConfig",
 ]
 
@@ -134,3 +137,6 @@ DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL")
 
 # If you don't want to use SMTP and just use console for checking email functionality
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Sitemap
+SITE_ID = 1
